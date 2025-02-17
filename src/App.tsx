@@ -1,3 +1,4 @@
+import { FC } from "react";
 import "./App.css";
 
 import SimpleComponent from "./components/SimpleComponent";
@@ -6,7 +7,7 @@ import FunctionalComponent from "./components/FunctionalComponent";
 import ClassComponent from "./components/ClassComponent";
 import ElementComponent from "./components/ElementComponent";
 
-function App() {
+const App: FC = () => {
   return (
     <>
       <SimpleComponent />
@@ -16,6 +17,6 @@ function App() {
       <ElementComponent />
     </>
   );
-}
+};
 
 export default App;
